@@ -72,7 +72,7 @@
   ],
 
   "dashboard": {
-    "btechCGPA": "7.33",
+    "btechCGPA": "9.33",
     "diplomaCGPA": "8.99"
   },
 
@@ -83,7 +83,7 @@
       "location": "Ahmedabad, Gujarat",
       "period": "2025 – Present",
       "expectedGraduation": "May 2028",
-      "cgpa": "7.33",
+      "cgpa": "9.33",
       "cgpaNote": "After 4th Semester",
       "batch": "DtoD (Diploma-to-Degree lateral entry)",
       "description": "Lateral entry into B.Tech ECE at Nirma University — a nationally ranked institution — after achieving Diploma CGPA of 8.99. Specialising in FPGA, RTL Design, and VLSI through coursework and hands-on hardware projects.",
