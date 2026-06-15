@@ -1,0 +1,571 @@
+{
+  "meta": {
+    "name": "Henil Patel",
+    "firstName": "Henil",
+    "lastName": "Patel",
+    "tagline": "FPGA • RTL Design • Embedded Systems • VLSI",
+    "email": "patelhenil2577@gmail.com",
+    "phone": "+91 9687064201",
+    "location": "Ahmedabad, Gujarat, India",
+    "linkedin": "https://www.linkedin.com/in/henil-patel-9024a9373",
+    "github": "https://github.com/henilpatel121806-beep",
+    "photo": "assets/images/henil-patel.jpg",
+    "resume": "assets/resume/henil-patel-resume.pdf",
+    "heroSummary": "Electronics and Communication Engineering student with hands-on FPGA implementation experience using Verilog HDL, RTL Design, Digital Logic Design, and Embedded Systems. Passionate about VLSI Design, Semiconductor Engineering, FPGA Architecture, and Hardware System Development.",
+    "resumeVersion": "v2.0-June2026",
+    "lastUpdated": "2026-06-13",
+    "seo": {
+      "title": "Henil Patel — FPGA & RTL Design Engineer Portfolio",
+      "description": "FPGA Design Engineer portfolio — Verilog HDL, RTL Design, Digital Logic, Embedded Systems, VLSI. B.Tech ECE, Nirma University.",
+      "keywords": "Henil Patel FPGA, Henil Patel RTL Design, Henil Patel Embedded Systems, Henil Patel VLSI, FPGA Portfolio, RTL Design Portfolio, VLSI Engineer Portfolio"
+    }
+  },
+
+  "availability": {
+    "status": "open",
+    "message": "Open to Opportunities",
+    "detail": "Internships · Research Roles · Full-Time FPGA/RTL/VLSI Positions",
+    "since": "June 2026",
+    "location": "Ahmedabad · Open to Relocation"
+  },
+
+  "currentLearning": [
+    "Static Timing Analysis (STA)",
+    "CMOS VLSI Design",
+    "Computer Architecture",
+    "PrimeTime",
+    "UVM Verification"
+  ],
+
+  "targetRoles": [
+    "FPGA Design Engineer",
+    "RTL Design Engineer",
+    "Digital Design Engineer",
+    "Embedded Systems Engineer",
+    "ASIC Verification Engineer",
+    "VLSI Design Engineer"
+  ],
+
+  "openTo": [
+    "Internships",
+    "Research Roles",
+    "FPGA Roles",
+    "RTL Roles",
+    "Embedded Roles",
+    "VLSI Roles"
+  ],
+
+  "targetCompanies": [
+    "NVIDIA", "AMD", "Intel", "Qualcomm", "Texas Instruments",
+    "Synopsys", "Cadence", "MediaTek", "Samsung Semiconductor",
+    "Broadcom", "Micron", "NXP", "Infineon", "STMicroelectronics",
+    "Analog Devices", "Renesas", "Western Digital", "ASML"
+  ],
+
+  "recruiterHighlights": [
+    { "icon": "⚡", "value": "3", "label": "FPGA Projects on DE2 Board" },
+    { "icon": "🎓", "value": "8.99", "label": "Diploma CGPA (GTU)" },
+    { "icon": "📜", "value": "4", "label": "Industry Certifications" },
+    { "icon": "🏢", "value": "5", "label": "Internships Completed" },
+    { "icon": "🧠", "value": "26+", "label": "Technical Skills" },
+    { "icon": "💻", "value": "14", "label": "ALU Operations in Verilog" }
+  ],
+
+  "dashboard": {
+    "btechCGPA": "7.33",
+    "diplomaCGPA": "8.99"
+  },
+
+  "education": [
+    {
+      "degree": "B.Tech in Electronics & Communication Engineering",
+      "institution": "Institute of Technology, Nirma University",
+      "location": "Ahmedabad, Gujarat",
+      "period": "2025 – Present",
+      "expectedGraduation": "May 2028",
+      "cgpa": "7.33",
+      "cgpaNote": "After 4th Semester",
+      "batch": "DtoD (Diploma-to-Degree lateral entry)",
+      "description": "Lateral entry into B.Tech ECE at Nirma University — a nationally ranked institution — after achieving Diploma CGPA of 8.99. Specialising in FPGA, RTL Design, and VLSI through coursework and hands-on hardware projects.",
+      "highlights": [
+        "Lateral entry through DtoD programme — top academic achiever",
+        "FPGA subject in 4th Semester — implemented 3 hardware projects",
+        "Nirma University — nationally ranked engineering institute"
+      ],
+      "status": "current"
+    },
+    {
+      "degree": "Diploma in Computer Engineering",
+      "institution": "Government Polytechnic, Gandhinagar (GTU)",
+      "location": "Gandhinagar, Gujarat",
+      "period": "2022 – 2025",
+      "expectedGraduation": "May 2025",
+      "cgpa": "8.99",
+      "cgpaNote": "Final CGPA",
+      "batch": null,
+      "description": "Top-tier Diploma CGPA at Government Polytechnic Gandhinagar under GTU, directly qualifying for lateral entry to B.Tech ECE at Nirma University.",
+      "highlights": [
+        "CGPA 8.99 — top academic performance at GTU",
+        "Qualified for lateral entry to Nirma University B.Tech ECE",
+        "Foundation in digital electronics, programming, and embedded systems"
+      ],
+      "status": "completed"
+    }
+  ],
+
+  "coursework": [
+    "Digital Logic Design",
+    "Electronics Devices & Circuits",
+    "Signals & Systems",
+    "Communication Systems",
+    "FPGA-Based System Design",
+    "Digital VLSI Testing (NPTEL)",
+    "Computer Organization & Architecture",
+    "Microprocessors & Microcontrollers",
+    "Data Structures & Algorithms"
+  ],
+
+  "skills": {
+    "hardware": [
+      "Verilog HDL",
+      "RTL Design",
+      "Digital Logic Design",
+      "FPGA Architecture",
+      "Combinational Logic",
+      "Sequential Logic",
+      "State Machine Design",
+      "Clock Domain Crossing",
+      "LFSR Design"
+    ],
+    "embedded": [
+      "Arduino",
+      "ESP8266",
+      "NodeMCU",
+      "Sensor Interfacing",
+      "IoT Protocols",
+      "UART / SPI / I2C"
+    ],
+    "programming": [
+      "C",
+      "C++",
+      "Python",
+      "Django",
+      "Shell Scripting"
+    ],
+    "eda": [
+      "Quartus Prime",
+      "ModelSim",
+      "VS Code",
+      "Arduino IDE",
+      "Git & GitHub",
+      "PrimeTime (Learning)"
+    ]
+  },
+
+  "projects": [
+    {
+      "id": "alu-16bit",
+      "title": "16-Bit ALU with Status Flags",
+      "subtitle": "Verilog HDL · FPGA Implementation · RTL Design",
+      "category": "RTL Design",
+      "tags": ["Verilog", "FPGA", "ALU", "RTL", "Quartus", "ModelSim"],
+      "filters": ["FPGA", "RTL", "Digital Design"],
+      "featured": true,
+      "status": {
+        "simulated": true,
+        "hardwareTested": true,
+        "documentationAvailable": true
+      },
+      "metrics": {
+        "operations": "14",
+        "flags": "6",
+        "board": "DE2",
+        "linesOfCode": "~200",
+        "modules": "1",
+        "tools": "Quartus + ModelSim"
+      },
+      "date": "March 2026",
+      "institution": "Institute of Technology, Nirma University",
+      "collaborator": "Manash Gusani (25BEC505)",
+      "supervisor": "Prof. Rutul Patel & Prof. Aakash Mecwan",
+      "summary": "Designed and implemented a fully functional 16-bit ALU supporting 14 operations with 6 status flags (CF, OF, PF, SF, ZF, AF). Verified via RTL simulation in ModelSim and physically deployed on Altera DE2 FPGA board using Quartus Prime.",
+      "highlights": [
+        "14 arithmetic and logical operations via 4-bit ALU_Sel control signal",
+        "6 status flags: CF (Carry), OF (Overflow), PF (Parity), SF (Sign), ZF (Zero), AF (Auxiliary Carry)",
+        "RTL simulation verified in ModelSim before hardware deployment",
+        "Physical deployment and testing on Altera DE2 FPGA board",
+        "FPGA switches for operand input; LED array for real-time output display",
+        "Operations: ADD, SUB, AND, OR, NOT, XOR, XNOR, NAND, NOR, INC, DEC, SHL, SHR"
+      ],
+      "operations": [
+        {"op": "ADD", "sel": "0000"}, {"op": "SUB", "sel": "0001"},
+        {"op": "AND", "sel": "0010"}, {"op": "OR",  "sel": "0011"},
+        {"op": "NOT A", "sel": "SW[8]"}, {"op": "NOT B", "sel": "SW[9]"},
+        {"op": "XOR",  "sel": "0110"}, {"op": "XNOR", "sel": "0111"},
+        {"op": "NAND", "sel": "1000"}, {"op": "NOR",  "sel": "1001"},
+        {"op": "INC",  "sel": "1010"}, {"op": "DEC",  "sel": "1011"},
+        {"op": "SHL",  "sel": "1100"}, {"op": "SHR",  "sel": "1101"}
+      ],
+      "flags": [
+        {"name": "CF", "desc": "Carry Flag — carry out of MSB during ADD or borrow during SUB"},
+        {"name": "OF", "desc": "Overflow Flag — overflow in signed arithmetic"},
+        {"name": "PF", "desc": "Parity Flag — even number of 1s in LSByte"},
+        {"name": "SF", "desc": "Sign Flag — MSB of result (sign in two's complement)"},
+        {"name": "ZF", "desc": "Zero Flag — result equals 16'b0"},
+        {"name": "AF", "desc": "Auxiliary Carry — carry from bit 3 to bit 4 (BCD use)"}
+      ],
+      "methodology": "The ALU accepts 2-bit MSB inputs from FPGA switches, constructs full 16-bit operands internally, and routes through a priority-encoded case statement selecting from 14 operations. Status flags computed combinationally post-operation. All 14 operations verified in ModelSim simulation before flashing to DE2 board.",
+      "outcome": "All 14 operations verified correct in simulation and hardware. Deployable as a CPU datapath building block — directly demonstrates RTL competency required in FPGA and ASIC design roles.",
+      "github": "https://github.com/henilpatel121806-beep",
+      "report": "assets/reports/alu-report.pdf",
+      "thumbnail": null,
+      "architectureDiagram": null,
+      "rtlDiagram": null,
+      "waveforms": null,
+      "hardwarePhotos": [],
+      "demoVideo": "https://drive.google.com/file/d/1C3430nCYWdqU_0969zL4QbFIdnLu5Fef/view?usp=drive_link"
+    },
+    {
+      "id": "whack-a-mole",
+      "title": "FPGA Whack-a-Mole Game",
+      "subtitle": "Verilog HDL · LFSR · Real-Time Interactive System",
+      "category": "FPGA Systems",
+      "tags": ["Verilog", "FPGA", "LFSR", "Game Logic", "7-Segment", "LCD"],
+      "filters": ["FPGA", "Digital Design"],
+      "featured": true,
+      "status": {
+        "simulated": true,
+        "hardwareTested": true,
+        "documentationAvailable": true
+      },
+      "metrics": {
+        "operations": "LFSR",
+        "flags": "5 Modules",
+        "board": "DE2",
+        "linesOfCode": "~400",
+        "modules": "5",
+        "tools": "Quartus + ModelSim"
+      },
+      "date": "2025–2026",
+      "institution": "Institute of Technology, Nirma University",
+      "collaborator": null,
+      "supervisor": null,
+      "summary": "Real-time interactive game on FPGA using Verilog. LFSR-based pseudo-random LED target generation, 30-second countdown timer, hardware scoring engine — all in synthesised logic. LCD welcome screen, 7-segment score and timer display.",
+      "highlights": [
+        "LFSR-based pseudo-random target generation — hardware randomness without CPU",
+        "5-module architecture: top, timer_30s, random_led, score, lcd_display",
+        "30-second countdown timer with HEX display",
+        "Real-time score tracking displayed on 7-segment",
+        "Game-over LED animation with centre-expansion pattern",
+        "LCD displays welcome message during gameplay"
+      ],
+      "operations": null,
+      "flags": null,
+      "methodology": "Modular Verilog design: top.v integrates timer_30s, random_led (LFSR), score, and lcd_display modules. LFSR shifts on slow_tick for non-repeating random LED. Score module detects rising edge on correct SW+LEDR match. Game-over triggers expansion LED animation.",
+      "outcome": "Demonstrated real-time hardware game logic — proves concurrent hardware design, LFSR randomness, and multi-module Verilog integration skills central to FPGA design roles.",
+      "github": "https://github.com/henilpatel121806-beep",
+      "report": "assets/reports/wam-report.pdf",
+      "thumbnail": null,
+      "architectureDiagram": null,
+      "rtlDiagram": null,
+      "waveforms": null,
+      "hardwarePhotos": [],
+      "demoVideo": null
+    },
+    {
+      "id": "lap-timer",
+      "title": "FPGA Car Lap Timer System",
+      "subtitle": "Verilog HDL · Clock Division · Multi-Display System",
+      "category": "FPGA Systems",
+      "tags": ["Verilog", "FPGA", "Clock Division", "Counters", "LCD", "7-Segment"],
+      "filters": ["FPGA", "Digital Design"],
+      "featured": true,
+      "status": {
+        "simulated": true,
+        "hardwareTested": true,
+        "documentationAvailable": true
+      },
+      "metrics": {
+        "operations": "50MHz",
+        "flags": "2 Cars",
+        "board": "DE2",
+        "linesOfCode": "~500",
+        "modules": "3",
+        "tools": "Quartus + ModelSim"
+      },
+      "date": "2025–2026",
+      "institution": "Institute of Technology, Nirma University",
+      "collaborator": null,
+      "supervisor": null,
+      "summary": "Multi-car digital lap timing system. Divides 50 MHz FPGA clock to millisecond resolution. Separate lap-capture registers for two cars. Drives 6× 7-segment displays for live timer and 16×2 LCD for lap history via custom state machine controller.",
+      "highlights": [
+        "50 MHz → 100 Hz clock division for millisecond-accurate timing",
+        "Cascaded ms (0–99) / sec (0–59) / min (0–59) counter hierarchy",
+        "Edge-triggered lap capture for Car 1 (KEY[2]) and Car 2 (KEY[3])",
+        "Live timer on 6× 7-segment displays",
+        "Lap history written to 16×2 LCD via counter-gated state machine",
+        "Start/stop toggle and reset via hardware keys"
+      ],
+      "operations": null,
+      "flags": null,
+      "methodology": "26-bit clock divider generates tick every 10ms. Three cascaded BCD counters increment on each tick. KEY press edge-triggers snapshot of counter state into lap registers. LCD state machine sequences through character writes with counter-gated enable pulses.",
+      "outcome": "Proves clock management, register design, and dual-display interfacing — core FPGA engineering skills. Real-time timing system directly analogous to industrial timer hardware.",
+      "github": "https://github.com/henilpatel121806-beep",
+      "report": null,
+      "thumbnail": null,
+      "architectureDiagram": null,
+      "rtlDiagram": null,
+      "waveforms": null,
+      "hardwarePhotos": [],
+      "demoVideo": "https://drive.google.com/drive/folders/1920FCDf36fIWjrSg0ZaiNQ_uX5T0Gqyr?usp=drive_link"
+    }
+  ],
+
+  "upcomingProjects": [
+    { "icon": "🔌", "title": "UART Controller", "tags": ["Verilog", "RTL"], "eta": "2026", "category": "RTL" },
+    { "icon": "📡", "title": "SPI Controller",  "tags": ["Verilog", "FPGA"], "eta": "2026", "category": "RTL" },
+    { "icon": "🔗", "title": "I2C Controller",  "tags": ["Verilog", "RTL"], "eta": "2026", "category": "RTL" },
+    { "icon": "📦", "title": "FIFO Design",      "tags": ["RTL", "VLSI"],   "eta": "2027", "category": "VLSI" },
+    { "icon": "⚙️", "title": "RISC-V Processor", "tags": ["Verilog", "CPU"], "eta": "2027", "category": "RTL" },
+    { "icon": "🧮", "title": "Cache Controller", "tags": ["RTL", "VLSI"],   "eta": "2027", "category": "VLSI" },
+    { "icon": "⏱",  "title": "STA Project",      "tags": ["STA", "PT"],     "eta": "2027", "category": "STA" },
+    { "icon": "🧩", "title": "CMOS Design",      "tags": ["CMOS", "VLSI"],  "eta": "2028", "category": "VLSI" }
+  ],
+
+  "experience": [
+    {
+      "role": "Community Service Intern",
+      "company": "Community Service Programme",
+      "location": "Ahmedabad, Gujarat",
+      "period": "June 2026",
+      "duration": "1 Month",
+      "type": "community",
+      "description": "Community service internship focused on leadership, communication, and teamwork. Contributed to community initiatives demonstrating social responsibility and professional collaboration skills.",
+      "skills": ["Leadership", "Communication", "Teamwork", "Social Responsibility"],
+      "certificate": null,
+      "projects": []
+    },
+    {
+      "role": "Python & Django Intern",
+      "company": "STYPIX",
+      "location": "Ahmedabad, Gujarat",
+      "period": "Jun 2024 – Aug 2024",
+      "duration": "6 weeks",
+      "type": "technical",
+      "description": "Completed internship in Python with Django. Worked on web backend development and contributed to company projects. Recognised for hard work and strong technical input towards the company.",
+      "skills": ["Python", "Django", "Web Backend", "REST API"],
+      "certificate": "assets/certificates/stypix.png",
+      "projects": []
+    },
+    {
+      "role": "Artificial Intelligence Intern",
+      "company": "Sahana System Limited",
+      "location": "Ahmedabad, Gujarat",
+      "period": "Jun 2024 – Aug 2024",
+      "duration": "6 weeks",
+      "type": "technical",
+      "description": "AI internship focused on understanding programming language tools and technologies. Worked across different project modules and implemented AI components independently.",
+      "skills": ["Artificial Intelligence", "Python", "Machine Learning"],
+      "certificate": "assets/certificates/sahana-ai.png",
+      "projects": []
+    },
+    {
+      "role": "Data Management in ERP – Finance Domain Intern",
+      "company": "Sahana System Limited",
+      "location": "Ahmedabad, Gujarat",
+      "period": "Jun 2024 – Aug 2024",
+      "duration": "6 weeks",
+      "type": "technical",
+      "description": "Gained understanding of data management principles within ERP Finance domain. Implemented project modules demonstrating cross-domain software adaptability.",
+      "skills": ["ERP", "Data Management", "Finance Domain"],
+      "certificate": "assets/certificates/sahana-erp.png",
+      "projects": []
+    },
+    {
+      "role": "Embedded Systems Intern",
+      "company": "AICTE IDEA Lab, Gujarat Technological University",
+      "location": "Gandhinagar, Gujarat",
+      "period": "10 Aug – 23 Aug 2023",
+      "duration": "2 weeks",
+      "type": "technical",
+      "description": "Two-week intensive embedded systems internship at GTU's AICTE IDEA Lab. Completed 8 hardware and IoT projects. Recognised as sincere and hardworking by GTU mentors.",
+      "skills": ["Arduino", "IoT", "NodeMCU", "Python", "Sensors", "Embedded C"],
+      "certificate": "assets/certificates/idealab-cert.png",
+      "projects": [
+        "Line Following Robot",
+        "Bluetooth Controlled Car",
+        "Obstacle Avoidance Vehicle",
+        "IoT Flood Monitoring System with Email Notification (NodeMCU)",
+        "IoT Slider Door",
+        "IoT Controlled Car",
+        "ICC T20 World Cup Data Analytics (Python)",
+        "Air Pollution Monitoring System"
+      ]
+    }
+  ],
+
+  "certifications": [
+    {
+      "id": "nptel-vlsi",
+      "title": "Digital VLSI Testing",
+      "organization": "NPTEL – IIT Kharagpur",
+      "platform": "SWAYAM",
+      "date": "Jan–Apr 2026",
+      "duration": "12-week course",
+      "score": "51%",
+      "assignments": "21.03/25",
+      "exam": "30/75",
+      "credits": 4,
+      "totalCandidates": 797,
+      "rollNo": "NPTEL26EE45S1050400503",
+      "highlight": "One of 797 certified; 4 academic credits recommended by MoE, Govt. of India",
+      "description": "Covers fault modelling, ATPG, DFT, scan chains, BIST — directly aligned with semiconductor industry testing requirements.",
+      "image": "assets/certificates/nptel-vlsi.png",
+      "pdf": "assets/certificates/nptel-vlsi.pdf",
+      "featured": true,
+      "pills": ["Score: 51%", "Assignments: 21.03/25", "Exam: 30/75", "4 Credits", "797 Certified"]
+    },
+    {
+      "id": "idealab-embedded",
+      "title": "Embedded System Design Internship",
+      "organization": "AICTE IDEA Lab, GTU",
+      "platform": "Gujarat Technological University",
+      "date": "Aug 2023",
+      "duration": "2 weeks",
+      "score": null,
+      "credits": null,
+      "highlight": "8 embedded & IoT projects completed — certified by GTU IDEA Lab",
+      "description": "Two-week intensive covering Arduino, NodeMCU, sensors, IoT, and Python data analytics.",
+      "image": "assets/certificates/idealab-cert.png",
+      "pdf": "assets/certificates/idealab-cert.pdf",
+      "featured": true,
+      "pills": ["8 Projects", "Embedded Systems", "IoT", "GTU Certified"]
+    },
+    {
+      "id": "stypix-django",
+      "title": "Python with Django – Internship Completion",
+      "organization": "STYPIX",
+      "platform": "STYPIX, Ahmedabad",
+      "date": "Jun–Aug 2024",
+      "duration": "6 weeks",
+      "score": null,
+      "credits": null,
+      "highlight": "Professional internship — recognised for hard work and great input to company",
+      "description": "Web backend development with Python and Django framework.",
+      "image": "assets/certificates/stypix.png",
+      "pdf": null,
+      "featured": false,
+      "pills": ["Python", "Django", "Web Backend"]
+    },
+    {
+      "id": "sahana-ai",
+      "title": "Artificial Intelligence Internship",
+      "organization": "Sahana System Limited",
+      "platform": "Sahana System Ltd., Ahmedabad",
+      "date": "Jun–Aug 2024",
+      "duration": "6 weeks",
+      "score": null,
+      "credits": null,
+      "highlight": "AI internship — outstanding effort across project modules",
+      "description": "AI internship covering programming tools, technologies, and project implementation.",
+      "image": "assets/certificates/sahana-ai.png",
+      "pdf": "assets/certificates/sahana-ai.pdf",
+      "featured": false,
+      "pills": ["AI", "Python", "ML Concepts"]
+    }
+  ],
+
+  "plannedCertifications": [
+    { "title": "VLSI Design Flow", "organization": "NPTEL", "eta": "2026–27" },
+    { "title": "Static Timing Analysis", "organization": "Synopsys / NPTEL", "eta": "2027" },
+    { "title": "UVM Verification", "organization": "Online", "eta": "2027" }
+  ],
+
+  "achievements": [
+    { "icon": "🏆", "title": "Diploma CGPA 8.99", "description": "Top academic performance at Government Polytechnic Gandhinagar (GTU) — qualified for direct lateral entry to B.Tech ECE at Nirma University.", "year": "2025" },
+    { "icon": "🎓", "title": "NPTEL Digital VLSI Testing", "description": "Certified by IIT Kharagpur — one of 797 candidates. 4 academic credits recommended by MoE, Govt. of India. Jan–Apr 2026.", "year": "2026" },
+    { "icon": "⚡", "title": "3 FPGA Projects Implemented", "description": "Designed, simulated, and hardware-tested three FPGA projects using Verilog HDL on Altera DE2: 16-bit ALU, Whack-a-Mole, Car Lap Timer.", "year": "2026" },
+    { "icon": "🏢", "title": "5 Industry Internships", "description": "Completed 5 certified internships: Embedded Systems (GTU IDEA Lab), Python/Django (STYPIX), AI & ERP (Sahana System Ltd.), Community Service.", "year": "2024–2026" },
+    { "icon": "📊", "title": "Nirma University Lateral Entry", "description": "Selected for DtoD lateral entry to B.Tech ECE at Institute of Technology, Nirma University — a nationally ranked engineering institution.", "year": "2025" }
+  ],
+
+  "githubRepos": [
+    {
+      "name": "16bit-alu-verilog",
+      "description": "16-bit ALU with 14 operations and 6 status flags (CF, ZF, OF, SF, PF, AF). RTL verified in ModelSim, implemented on Altera DE2 FPGA.",
+      "language": "Verilog",
+      "url": "https://github.com/henilpatel121806-beep",
+      "stars": 0, "forks": 0,
+      "topics": ["fpga", "verilog", "rtl", "alu", "digital-design"]
+    },
+    {
+      "name": "fpga-whack-a-mole",
+      "description": "Real-time FPGA game. LFSR random LED generation, hardware timers, scoring engine, LCD display — pure synthesised Verilog logic.",
+      "language": "Verilog",
+      "url": "https://github.com/henilpatel121806-beep",
+      "stars": 0, "forks": 0,
+      "topics": ["fpga", "verilog", "lfsr", "game", "real-time"]
+    },
+    {
+      "name": "fpga-car-lap-timer",
+      "description": "Multi-car digital lap timing system. 50MHz clock division, cascaded counters, 7-segment and LCD display controllers in Verilog.",
+      "language": "Verilog",
+      "url": "https://github.com/henilpatel121806-beep",
+      "stars": 0, "forks": 0,
+      "topics": ["fpga", "verilog", "clock-division", "lcd", "timing"]
+    }
+  ],
+
+  "roadmap": {
+    "completed": ["Verilog HDL", "FPGA Development", "Digital Logic Design", "RTL Design", "ModelSim Simulation", "Quartus Prime", "Embedded Systems (Arduino, NodeMCU)", "Python Programming"],
+    "learning":  ["Static Timing Analysis (STA)", "CMOS VLSI Design", "Computer Architecture", "PrimeTime", "UVM Verification", "RISC-V Architecture"],
+    "target":    ["FPGA Design Engineer", "RTL Design Engineer", "Digital Design Engineer", "Embedded Systems Engineer", "ASIC Verification Engineer", "VLSI Design Engineer"]
+  },
+
+  "whyHireMe": [
+    { "icon": "⚡", "title": "Strong Digital Electronics Foundation", "body": "Solid grounding in digital logic, Boolean algebra, combinational & sequential circuits, state machines, and timing analysis — built through coursework and real FPGA hardware implementation.", "proof": "Diploma CE CGPA 8.99 · Digital Logic Design · FPGA from scratch · DE2 board" },
+    { "icon": "🔧", "title": "FPGA Development Experience", "body": "Hands-on with Intel/Altera DE2 boards, Quartus Prime synthesis flow, pin assignment, and hardware bring-up. Moved from RTL code to working silicon on real hardware.", "proof": "3 FPGA projects implemented · Quartus Prime · ModelSim · DE2 board" },
+    { "icon": "💻", "title": "Verilog HDL Skills", "body": "Production-quality Verilog for 16-bit ALU, LFSR game, lap timer, 7-segment controllers, and LCD state machines. Understands synthesis implications of RTL constructs.", "proof": "16-bit ALU · Whack-a-Mole (5 modules) · Car Lap Timer · LCD controller" },
+    { "icon": "🧠", "title": "RTL Design Knowledge", "body": "Understands RTL design methodology, synthesis flow, and path from HDL to hardware. Experience with combinational and sequential RTL constructs, timing constraints, and simulation.", "proof": "3 RTL projects · ModelSim verified · Quartus synthesised · DE2 deployed" },
+    { "icon": "🛰️", "title": "Embedded Systems Experience", "body": "8 embedded and IoT projects at AICTE IDEA Lab covering Arduino, ESP8266, NodeMCU, sensor interfacing, and cloud-connected systems. Valuable for hardware-adjacent roles.", "proof": "AICTE IDEA Lab · Aug 2023 · 8 projects · GTU certified" },
+    { "icon": "🎓", "title": "NPTEL Digital VLSI Testing", "body": "12-week IIT Kharagpur course on Digital VLSI Testing — fault modelling, ATPG, DFT, scan chains, and BIST — directly aligned with semiconductor industry requirements.", "proof": "NPTEL Jan–Apr 2026 · 4 Academic Credits · 797 certified · Score: 51%" },
+    { "icon": "📊", "title": "Strong Academic Performance", "body": "8.99 CGPA in Diploma CE at GTU, earning direct lateral entry to B.Tech ECE at Nirma University. Currently maintaining 7.33 CGPA in B.Tech after 4 semesters.", "proof": "Diploma CGPA 8.99 · B.Tech CGPA 7.33 · Nirma University DtoD" },
+    { "icon": "🏢", "title": "5 Industry Internships", "body": "Five certified internships across embedded systems, AI, Python/Django, ERP Finance, and community service — demonstrating adaptability and professional delivery capability.", "proof": "STYPIX · Sahana System Ltd · AICTE IDEA Lab · Community Service · All certified" },
+    { "icon": "📖", "title": "Continuous Learning Mindset", "body": "Actively learning Static Timing Analysis, CMOS Design, and UVM Verification — building systematically toward VLSI engineering. Completed NPTEL course while executing FPGA projects.", "proof": "Currently learning STA · CMOS Design · Computer Architecture · RISC-V" },
+    { "icon": "❤️", "title": "Passion for Semiconductor Engineering", "body": "Genuine passion for hardware design — built FPGA projects beyond course requirements. Targeting NVIDIA, AMD, Intel, Qualcomm, Synopsys, and Cadence-level semiconductor roles.", "proof": "Target: NVIDIA · AMD · Intel · Qualcomm · Synopsys · Cadence · TI" }
+  ],
+
+  "journey": [
+    { "icon": "📐", "label": "Diploma\nComp. Eng.", "period": "2022–2025", "status": "done",   "description": "Government Polytechnic, Gandhinagar · CGPA 8.99" },
+    { "icon": "🎓", "label": "B.Tech ECE",        "period": "2025–2028", "status": "active", "description": "Nirma University · DtoD Lateral Entry · Expected 2028" },
+    { "icon": "🔌", "label": "FPGA\nDevelopment", "period": "2025–2026", "status": "done",   "description": "3 Projects on Altera DE2 Board" },
+    { "icon": "💡", "label": "RTL Design",        "period": "2025–2026", "status": "active", "description": "Verilog · Quartus · ModelSim" },
+    { "icon": "⏱",  "label": "STA Analysis",      "period": "In Progress","status": "future", "description": "PrimeTime · STA Methodology" },
+    { "icon": "🧩", "label": "CMOS Design",        "period": "Upcoming",  "status": "future", "description": "CMOS VLSI Design" },
+    { "icon": "🏆", "label": "VLSI Design\nEngineer","period": "Goal",   "status": "target", "description": "NVIDIA · AMD · Intel · Qualcomm" }
+  ],
+
+  "languages": [
+    { "name": "Gujarati", "level": "Native",        "pct": 100 },
+    { "name": "Hindi",    "level": "Fluent",        "pct": 90  },
+    { "name": "English",  "level": "Professional",  "pct": 80  }
+  ],
+
+  "socials": [
+    { "label": "LinkedIn", "icon": "in",  "url": "https://www.linkedin.com/in/henil-patel-9024a9373" },
+    { "label": "GitHub",   "icon": "gh",  "url": "https://github.com/henilpatel121806-beep" },
+    { "label": "Email",    "icon": "em",  "url": "mailto:patelhenil2577@gmail.com" }
+  ],
+
+  "downloads": [
+    { "title": "Resume / CV",          "icon": "📄", "description": "Full engineering resume with projects, skills, education, and internship experience.", "file": "assets/resume/henil-patel-resume.pdf", "label": "Download Resume" },
+    { "title": "ALU Project Report",   "icon": "📑", "description": "16-bit ALU — full technical report with Verilog code, RTL view, simulation waveforms, and hardware results.", "file": "assets/reports/alu-report.pdf", "label": "Download Report" },
+    { "title": "Whack-a-Mole Report",  "icon": "📑", "description": "FPGA Whack-a-Mole — Verilog code, modular architecture, RTL/TTL diagrams, and hardware demonstration.", "file": "assets/reports/wam-report.pdf", "label": "Download Report" },
+    { "title": "NPTEL Certificate",    "icon": "🏅", "description": "NPTEL Digital VLSI Testing — IIT Kharagpur · 4 Academic Credits · Jan–Apr 2026.", "file": "assets/certificates/nptel-vlsi.pdf", "label": "Download Certificate" }
+  ],
+
+  "contact": {
+    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "availableFor": "Internships, Research Roles, Full-time FPGA/RTL/VLSI positions"
+  }
+}
