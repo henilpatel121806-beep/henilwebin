@@ -726,7 +726,7 @@ function initContactForm() {
     const sub = form.querySelector('.form-submit');
     sub.disabled=true; sub.textContent='Sending...';
     try {
-      const r = await fetch(D.contact?.formspreeEndpoint || 'https://formspree.io/f/YOUR_ID', {
+      const r = await fetch(D.contact?.formspreeEndpoint || 'https://formspree.io/f/mojzbaab', {
         method:'POST', body:new FormData(form), headers:{Accept:'application/json'}
       });
       if (r.ok) {
