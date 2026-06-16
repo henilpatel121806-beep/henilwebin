@@ -9,7 +9,8 @@ let D = null;
 
 /* ── LOAD DATA ───────────────────────────────────────────── */
 async function loadData() {
-  const r = await fetch('assets/data/portfolio.json');
+  const bust = '?v=' + Date.now();
+  const r = await fetch('assets/data/portfolio.json' + bust);
   D = await r.json();
 }
 
@@ -208,22 +209,22 @@ function getThumb(id) {
 ══════════════════════════════════════════════════════════ */
 
 function renderMeta() {
-  document.title = D.meta.seo.title;
-  document.querySelector('meta[name="description"]').content = D.meta.seo.description;
-  document.querySelector('meta[name="keywords"]').content   = D.meta.seo.keywords;
+  document.title = D.meta?.seo?.title || 'Henil Patel Portfolio';
+  document.querySelector('meta[name="description"]').content = D.meta?.seo?.description || '';
+  document.querySelector('meta[name="keywords"]').content   = D.meta?.seo?.keywords || '';
 }
 
 function renderNav() {
   const nf = $('nav-first'), nl = $('nav-last');
-  if (nf) nf.textContent = D.meta.firstName.toLowerCase();
-  if (nl) nl.textContent = '.' + D.meta.lastName.toLowerCase();
+  if (nf) nf.textContent = D.meta?.firstName || 'Henil'.toLowerCase();
+  if (nl) nl.textContent = '.' + D.meta?.lastName || 'Patel'.toLowerCase();
 }
 
 function renderHero() {
   const m = D.meta;
   $('hero-first').textContent   = m.firstName;
   $('hero-last').textContent    = ' ' + m.lastName;
-  $('hero-role').textContent    = D.education[0].degree + ' · ' + D.education[0].institution;
+  $('hero-role').textContent    = (D.education?.[0]?.degree || '') + ' · ' + (D.education?.[0]?.institution || '');
   $('hero-summary').textContent = m.heroSummary;
 
   const photo = $('hero-photo');
@@ -239,17 +240,17 @@ function renderHero() {
   // Chips
   const chips = $('hero-chips');
   if (chips) {
-    [...D.skills.hardware.slice(0,5), ...D.skills.eda.slice(0,2)].forEach(s => {
+    [...(D.skills?.hardware   || []).slice(0,5), ...(D.skills?.eda        || []).slice(0,2)].forEach(s => {
       const sp = document.createElement('span'); sp.className='chip hi'; sp.textContent=s; chips.appendChild(sp);
     });
-    D.skills.programming.slice(0,3).forEach(s => {
+    (D.skills?.programming|| []).slice(0,3).forEach(s => {
       const sp = document.createElement('span'); sp.className='chip'; sp.textContent=s; chips.appendChild(sp);
     });
   }
 
   // Online status
   const os = $('online-status');
-  if (os) os.textContent = D.availability.message;
+  if (os) os.textContent = D.availability?.message || 'Open to Opportunities';
 
   // GitHub profile link
   const ghProfile = $('gh-profile-link');
@@ -271,7 +272,7 @@ function renderAvailability() {
 function renderLearning() {
   const el = $('learn-pills');
   if (!el) return;
-  D.currentLearning.forEach(s => {
+  (D.currentLearning || []).forEach(s => {
     const sp = document.createElement('span'); sp.className='learn-pill'; sp.textContent=s; el.appendChild(sp);
   });
 }
@@ -279,15 +280,15 @@ function renderLearning() {
 function renderQuickView() {
   const stats = $('qv-stats'), open = $('qv-open');
   if (!stats) return;
-  const totalSkills = D.skills.hardware.length + D.skills.embedded.length + D.skills.programming.length + D.skills.eda.length;
+  const totalSkills = (D.skills?.hardware   || []).length + (D.skills?.embedded   || []).length + (D.skills?.programming|| []).length + (D.skills?.eda        || []).length;
   const rows = [
-    ['B.Tech CGPA (Sem 4)', D.dashboard.btechCGPA],
-    ['Diploma CGPA',        D.dashboard.diplomaCGPA],
-    ['FPGA Projects',       D.projects.length + '+'],
-    ['Certifications',      D.certifications.length + ''],
-    ['Internships',         D.experience.length + ''],
+    ['B.Tech CGPA (Sem 4)', D.dashboard?.btechCGPA || 'N/A'],
+    ['Diploma CGPA',        D.dashboard?.diplomaCGPA || 'N/A'],
+    ['FPGA Projects',       (D.projects || []).length + '+'],
+    ['Certifications',      (D.certifications || []).length + ''],
+    ['Internships',         (D.experience || []).length + ''],
     ['Technical Skills',    totalSkills + '+'],
-    ['GitHub Repos',        D.githubRepos.length + '+'],
+    ['GitHub Repos',        (D.githubRepos || []).length + '+'],
   ];
   rows.forEach(([l,v]) => {
     const d = document.createElement('div'); d.className='qv-stat';
@@ -295,7 +296,7 @@ function renderQuickView() {
     stats.appendChild(d);
   });
   if (open) {
-    D.openTo.forEach(o => {
+    (D.openTo || []).forEach(o => {
       const sp = document.createElement('span'); sp.className='chip hi'; sp.textContent=o; open.appendChild(sp);
     });
   }
@@ -305,15 +306,15 @@ function renderDashboard() {
   const el = $('dash-grid');
   if (!el) return;
   const m = D.meta;
-  const totalSkills = D.skills.hardware.length + D.skills.embedded.length + D.skills.programming.length + D.skills.eda.length;
+  const totalSkills = (D.skills?.hardware   || []).length + (D.skills?.embedded   || []).length + (D.skills?.programming|| []).length + (D.skills?.eda        || []).length;
   const items = [
-    { n: D.projects.length+'+',      l:'Total Projects',   link:'#projects',     cls:'' },
-    { n: D.certifications.length+'', l:'Certifications',   link:'#certifications',cls:'' },
-    { n: D.experience.length+'',     l:'Internships',      link:'#experience',    cls:'' },
+    { n: (D.projects || []).length+'+',      l:'Total Projects',   link:'#projects',     cls:'' },
+    { n: (D.certifications || []).length+'', l:'Certifications',   link:'#certifications',cls:'' },
+    { n: (D.experience || []).length+'',     l:'Internships',      link:'#experience',    cls:'' },
     { n: totalSkills+'+',            l:'Tech Skills',      link:'#skills',        cls:'' },
-    { n: D.dashboard.btechCGPA,      l:'B.Tech CGPA',      link:'#education',     cls:'' },
-    { n: D.dashboard.diplomaCGPA,    l:'Diploma CGPA',     link:'#education',     cls:'' },
-    { n: D.githubRepos.length+'+',   l:'GitHub Repos',     link:m.github,         cls:'', ext:true },
+    { n: D.dashboard?.btechCGPA || 'N/A',      l:'B.Tech CGPA',      link:'#education',     cls:'' },
+    { n: D.dashboard?.diplomaCGPA || 'N/A',    l:'Diploma CGPA',     link:'#education',     cls:'' },
+    { n: (D.githubRepos || []).length+'+',   l:'GitHub Repos',     link:m.github,         cls:'', ext:true },
     { n:'↓ Resume',                  l:'Download CV',      link:m.resume,         cls:'res', dl:true },
   ];
   items.forEach(item => {
@@ -333,7 +334,7 @@ function renderDashboard() {
 function renderRecruiterHighlights() {
   const el = $('rh-grid');
   if (!el) return;
-  D.recruiterHighlights.forEach(h => {
+  (D.recruiterHighlights || []).forEach(h => {
     const d = document.createElement('div'); d.className='rh-card fade-up';
     d.innerHTML = `<div class="rh-icon">${h.icon}</div><div><div class="rh-num">${h.value}</div><div class="rh-lbl">${h.label}</div></div>`;
     el.appendChild(d);
@@ -343,7 +344,7 @@ function renderRecruiterHighlights() {
 function renderWhyHireMe() {
   const el = $('why-grid');
   if (!el) return;
-  D.whyHireMe.forEach((c,i) => {
+  (D.whyHireMe || []).forEach((c,i) => {
     const d = document.createElement('div'); d.className='why-card fade-up';
     d.style.transitionDelay = (i*0.05)+'s';
     d.innerHTML = `
@@ -360,7 +361,7 @@ function renderWhyHireMe() {
 function renderJourney() {
   const el = $('journey-nodes');
   if (!el) return;
-  D.journey.forEach(n => {
+  (D.journey || []).forEach(n => {
     const d = document.createElement('div'); d.className=`jnode ${n.status}`; d.title=n.description;
     d.innerHTML = `<div class="jdot">${n.icon}</div><div class="jlabel">${n.label.replace('\n','<br>')}</div><div class="jperiod">${n.period}</div>`;
     el.appendChild(d);
@@ -371,7 +372,7 @@ function renderProjects(filter='All') {
   const el = $('proj-grid');
   if (!el) return;
   el.innerHTML = '';
-  const list = filter==='All' ? D.projects : D.projects.filter(p=>p.filters.includes(filter));
+  const list = filter==='All' ? D.projects : (D.projects || []).filter(p=>p.filters.includes(filter));
   list.forEach(p => {
     const d = document.createElement('div'); d.className='proj-card fade-up';
     d.innerHTML = `
@@ -406,7 +407,7 @@ function renderProjects(filter='All') {
 function renderProjectFilters() {
   const el = $('proj-filters');
   if (!el) return;
-  const filters = ['All', ...new Set(D.projects.flatMap(p=>p.filters))];
+  const filters = ['All', ...new Set((D.projects || []).flatMap(p=>p.filters))];
   filters.forEach(f => {
     const b = document.createElement('button'); b.className='filter-btn'+(f==='All'?' active':''); b.textContent=f;
     b.addEventListener('click', () => {
@@ -421,7 +422,7 @@ function renderProjectFilters() {
 function renderUpcoming() {
   const el = $('upcoming-grid');
   if (!el) return;
-  D.upcomingProjects.forEach(p => {
+  (D.upcomingProjects || []).forEach(p => {
     const d = document.createElement('div'); d.className='upcoming-card fade-up';
     d.innerHTML = `<div class="upcoming-icon">${p.icon}</div><div class="upcoming-title">${p.title}</div><div class="upcoming-tags">${p.tags.map(t=>chip(t)).join('')}</div><div class="upcoming-eta">ETA: ${p.eta}</div>`;
     el.appendChild(d);
@@ -432,10 +433,10 @@ function renderSkills() {
   const el = $('skills-grid');
   if (!el) return;
   const groups = [
-    {icon:'⚡', title:'Hardware & RTL',   items:D.skills.hardware},
-    {icon:'🔧', title:'Embedded Systems', items:D.skills.embedded},
-    {icon:'💻', title:'Programming',      items:D.skills.programming},
-    {icon:'🛠', title:'EDA Tools',        items:D.skills.eda},
+    {icon:'⚡', title:'Hardware & RTL',   items:(D.skills?.hardware   || [])},
+    {icon:'🔧', title:'Embedded Systems', items:(D.skills?.embedded   || [])},
+    {icon:'💻', title:'Programming',      items:(D.skills?.programming|| [])},
+    {icon:'🛠', title:'EDA Tools',        items:(D.skills?.eda        || [])},
   ];
   groups.forEach(g => {
     const d = document.createElement('div'); d.className='skill-group fade-up';
@@ -444,14 +445,14 @@ function renderSkills() {
   });
 
   const cw = $('cw-chips');
-  if (cw) D.coursework.forEach(c=>{const sp=document.createElement('span');sp.className='chip';sp.textContent=c;cw.appendChild(sp);});
+  if (cw) (D.coursework || []).forEach(c=>{const sp=document.createElement('span');sp.className='chip';sp.textContent=c;cw.appendChild(sp);});
 }
 
 function renderExperience() {
   const el = $('timeline'), lbl = $('exp-count-label');
   if (!el) return;
-  if (lbl) lbl.textContent = `${D.experience.length} internships — generated from experience[] in JSON`;
-  D.experience.forEach(e => {
+  if (lbl) lbl.textContent = `${(D.experience || []).length} internships — generated from experience[] in JSON`;
+  (D.experience || []).forEach(e => {
     const d = document.createElement('div'); d.className=`titem ${e.type==='community'?'community':''} fade-up`;
     d.innerHTML = `
       <div class="t-period">${e.period} · ${e.duration}</div>
@@ -468,7 +469,7 @@ function renderExperience() {
 function renderEducation() {
   const el = $('edu-grid');
   if (!el) return;
-  D.education.forEach(e => {
+  (D.education || []).forEach(e => {
     const d = document.createElement('div'); d.className='edu-card fade-up';
     d.innerHTML = `
       <div class="edu-status"><span class="chip ${e.status==='current'?'cy':'hi'}">${e.status==='current'?'Current':'Completed'}</span></div>
@@ -490,7 +491,7 @@ function renderCertifications() {
   const el = $('cert-grid');
   if (!el) return;
 
-  D.certifications.forEach(c => {
+  (D.certifications || []).forEach(c => {
     const d = document.createElement('div');
     d.className = 'cert-card fade-up' + (c.id==='nptel-vlsi'?' nptel':'');
     d.innerHTML = `
@@ -516,7 +517,7 @@ function renderCertifications() {
   });
 
   // Planned certifications
-  D.plannedCertifications.forEach(c => {
+  (D.plannedCertifications || []).forEach(c => {
     const d = document.createElement('div'); d.className='cert-card planned fade-up';
     d.innerHTML = `
       <div class="cert-img"><div class="cert-img-fallback"><div class="cert-img-icon">📌</div><div style="color:var(--p)">Planned</div></div></div>
@@ -534,7 +535,7 @@ function renderCertifications() {
 function renderAchievements() {
   const el = $('achiev-grid');
   if (!el) return;
-  D.achievements.forEach(a => {
+  (D.achievements || []).forEach(a => {
     const d = document.createElement('div'); d.className='achiev-card fade-up';
     d.innerHTML = `<div class="achiev-icon">${a.icon}</div><div class="achiev-title">${a.title}</div><div class="achiev-desc">${a.description}</div><div class="achiev-year">${a.year}</div>`;
     el.appendChild(d);
@@ -544,7 +545,7 @@ function renderAchievements() {
 function renderGitHub() {
   const el = $('gh-grid');
   if (!el) return;
-  D.githubRepos.forEach(r => {
+  (D.githubRepos || []).forEach(r => {
     const d = document.createElement('div'); d.className='gh-card fade-up';
     d.innerHTML = `
       <div class="gh-header"><div class="gh-icon-wrap">📁</div><div class="gh-name">${r.name}</div></div>
@@ -562,7 +563,7 @@ function renderGitHub() {
 function renderLanguages() {
   const el = $('lang-grid');
   if (!el) return;
-  D.languages.forEach(l => {
+  (D.languages || []).forEach(l => {
     const d = document.createElement('div'); d.className='lang-card fade-up';
     d.innerHTML = `<div class="lang-name">${l.name}</div><div class="lang-level">${l.level}</div><div class="lang-bar-wrap"><div class="lang-bar" style="width:0%" data-width="${l.pct}%"></div></div>`;
     el.appendChild(d);
@@ -584,15 +585,15 @@ function renderLanguages() {
 function renderRoadmap() {
   const done=$('road-done'), learn=$('road-learning'), tgt=$('road-target');
   if (!done) return;
-  D.roadmap.completed.forEach(i=>{const d=document.createElement('div');d.className='road-item';d.innerHTML=`<span class="road-dot"></span>${i}`;done.appendChild(d);});
-  D.roadmap.learning.forEach(i=>{const d=document.createElement('div');d.className='road-item';d.innerHTML=`<span class="road-dot"></span>${i}`;learn.appendChild(d);});
-  D.roadmap.target.forEach(i=>{const d=document.createElement('div');d.className='road-item';d.innerHTML=`<span class="road-dot"></span>${i}`;tgt.appendChild(d);});
+  (D.roadmap?.completed || []).forEach(i=>{const d=document.createElement('div');d.className='road-item';d.innerHTML=`<span class="road-dot"></span>${i}`;done.appendChild(d);});
+  (D.roadmap?.learning  || []).forEach(i=>{const d=document.createElement('div');d.className='road-item';d.innerHTML=`<span class="road-dot"></span>${i}`;learn.appendChild(d);});
+  (D.roadmap?.target    || []).forEach(i=>{const d=document.createElement('div');d.className='road-item';d.innerHTML=`<span class="road-dot"></span>${i}`;tgt.appendChild(d);});
 }
 
 function renderCompanies() {
   const el = $('companies-scroll');
   if (!el) return;
-  D.targetCompanies.forEach(c => {
+  (D.targetCompanies || []).forEach(c => {
     const sp = document.createElement('span'); sp.className='company-badge'; sp.textContent=c; el.appendChild(sp);
   });
 }
@@ -600,7 +601,7 @@ function renderCompanies() {
 function renderDownloads() {
   const el = $('dl-grid');
   if (!el) return;
-  D.downloads.forEach(dl => {
+  (D.downloads || []).forEach(dl => {
     const d = document.createElement('div'); d.className='dl-card fade-up';
     d.innerHTML = `<div class="dl-icon">${dl.icon}</div><div class="dl-title">${dl.title}</div><div class="dl-desc">${dl.description}</div><a href="${dl.file}" download class="dl-btn">↓ ${dl.label}</a>`;
     el.appendChild(d);
@@ -610,7 +611,7 @@ function renderDownloads() {
 function renderContact() {
   const m = D.meta;
   const avail = $('contact-avail');
-  if (avail) avail.textContent = D.contact.availableFor;
+  if (avail) avail.textContent = D.contact?.availableFor || '';
 
   const links = $('contact-links');
   if (links) {
@@ -631,7 +632,7 @@ function renderContact() {
 
   const soc = $('socials-row');
   if (soc) {
-    D.socials.forEach(s => {
+    (D.socials || []).forEach(s => {
       const a = document.createElement('a'); a.className='soc-btn'; a.href=s.url; a.target='_blank'; a.rel='noopener'; a.textContent=s.label; soc.appendChild(a);
     });
     // Resume download button
@@ -641,18 +642,18 @@ function renderContact() {
 
 function renderFooter() {
   const brand = $('footer-brand'), roles = $('footer-roles'), meta = $('footer-meta');
-  if (brand) brand.innerHTML = `<span class="accent">${D.meta.firstName.toLowerCase()}</span>.${D.meta.lastName.toLowerCase()} — FPGA &amp; RTL Engineer`;
+  if (brand) brand.innerHTML = `<span class="accent">${D.meta?.firstName || 'Henil'.toLowerCase()}</span>.${D.meta?.lastName || 'Patel'.toLowerCase()} — FPGA &amp; RTL Engineer`;
   if (roles) {
-    D.targetRoles.slice(0,4).forEach(r => {
+    (D.targetRoles || []).slice(0,4).forEach(r => {
       const sp = document.createElement('span'); sp.className='footer-role-tag'; sp.textContent=r; roles.appendChild(sp);
     });
   }
-  if (meta) meta.textContent = `${D.education[0].institution} · ${D.education[0].period} · v${D.meta.resumeVersion} · Updated: ${D.meta.lastUpdated}`;
+if (meta) meta.textContent = `${(D.education?.[0]?.institution || '')} · ${(D.education?.[0]?.period || '')} · Updated: ${D.meta?.lastUpdated || ''}`;
 }
 
 /* ── MODAL ───────────────────────────────────────────────── */
 window.openModal = function(id) {
-  const p = D.projects.find(x=>x.id===id);
+  const p = (D.projects || []).find(x=>x.id===id);
   if (!p) return;
   $('modal-title').textContent = p.title;
 
@@ -725,7 +726,7 @@ function initContactForm() {
     const sub = form.querySelector('.form-submit');
     sub.disabled=true; sub.textContent='Sending...';
     try {
-      const r = await fetch(D.contact.formspreeEndpoint, {
+      const r = await fetch(D.contact?.formspreeEndpoint || 'https://formspree.io/f/YOUR_ID', {
         method:'POST', body:new FormData(form), headers:{Accept:'application/json'}
       });
       if (r.ok) {
@@ -733,7 +734,7 @@ function initContactForm() {
         $('form-success').style.display='block';
       } else {
         sub.disabled=false; sub.textContent='Send Message ↗';
-        alert('Please email directly: '+D.meta.email);
+        alert('Please email directly: '+D.meta?.email || '');
       }
     } catch {
       sub.disabled=false; sub.textContent='Send Message ↗';
