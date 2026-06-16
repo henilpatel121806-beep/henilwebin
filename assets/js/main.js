@@ -730,21 +730,14 @@ function initContactForm() {
         method:'POST', body:new FormData(form), headers:{Accept:'application/json'}
       });
       if (r.ok) {
-        const success = document.createElement('div');
-        success.innerHTML = '✅ Message sent successfully!';
-        success.style.color = '#76b900';
-        success.style.marginTop = '1rem';
+  alert('Message sent successfully!');
+  form.reset();
+} else {
+  alert('Message could not be sent.');
+}
 
-        form.appendChild(success);
-
-        form.reset();
-
-        sub.disabled = false;
-        sub.textContent = 'Send Message ↗';}
-      else {
-        sub.disabled=false; sub.textContent='Send Message ↗';
-        alert('Please email directly: '+D.meta?.email || '');
-      }
+sub.disabled = false;
+sub.textContent = 'Send Message ↗';
     } catch {
       sub.disabled=false; sub.textContent='Send Message ↗';
     }
