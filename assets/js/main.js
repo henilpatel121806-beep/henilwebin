@@ -730,9 +730,18 @@ function initContactForm() {
         method:'POST', body:new FormData(form), headers:{Accept:'application/json'}
       });
       if (r.ok) {
-        form.style.display='none';
-        $('form-success').style.display='block';
-      } else {
+        const success = document.createElement('div');
+        success.innerHTML = '✅ Message sent successfully!';
+        success.style.color = '#76b900';
+        success.style.marginTop = '1rem';
+
+        form.appendChild(success);
+
+        form.reset();
+
+        sub.disabled = false;
+        sub.textContent = 'Send Message ↗';}
+      else {
         sub.disabled=false; sub.textContent='Send Message ↗';
         alert('Please email directly: '+D.meta?.email || '');
       }
